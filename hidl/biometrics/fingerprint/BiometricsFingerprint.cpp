@@ -52,6 +52,7 @@ BiometricsFingerprint* BiometricsFingerprint::sInstance = nullptr;
 BiometricsFingerprint::BiometricsFingerprint()
     : mClientCallback(nullptr),
       mDevice(nullptr),
+      mIsUdfps(false),
       mUdfpsHandlerFactory(nullptr),
       mUdfpsHandler(nullptr) {
     sInstance = this;  // keep track of the most recent instance
